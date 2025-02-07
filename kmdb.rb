@@ -85,15 +85,190 @@ role.destroy_all
 # Generate models and tables, according to the domain model.
 # TODO!
 
+rails generate model "movie"
+rails generate model "actor"
+rails generate model "role"
+rails generate model "studio"
 
-
-
-
+rails db:migrate
 
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
+
+new_studio = studio.new
+new_studio["name"] = "Warner Bros."
+new_studio.save
+
+puts new_studio.inspect
+
+new_actor = actor.new
+new_actor["name"] = "Christian Bale"
+new_actor.save
+
+
+new_actor = actor.new
+new_actor["name"] = "Michael Caine"
+new_actor.save
+
+new_actor = actor.new
+new_actor["name"] = "Liam Neeson"
+new_actor.save
+
+new_actor = actor.new
+new_actor["name"] = "Katie Holmes"
+new_actor.save
+
+new_actor = actor.new
+new_actor["name"] = "Gary Oldman"
+new_actor.save
+
+new_actor = actor.new
+new_actor["name"] = "Heath Ledger"
+new_actor.save
+
+new_actor = actor.new
+new_actor["name"] = "Aaron Eckhart"
+new_actor.save
+
+new_actor = actor.new
+new_actor["name"] = "Maggie Gyllenhaal"
+new_actor.save
+
+
+new_actor = actor.new
+new_actor["name"] = "Tom Hardy"
+new_actor.save
+
+new_actor = actor.new
+new_actor["name"] = "Joseph Gordon-Levitt"
+new_actor.save
+
+new_actor = actor.new
+new_actor["name"] = "Anne Hathaway"
+new_actor.save
+
+puts new_actor.inspect
+
+
+new_movie = movie.new
+new_movie["title"] = "Batman Begins"
+new_movie["year_released"] = "2005"
+new_movie["rated"] = "PG-13"
+new_movie["Studio_ID"] = 
+new_movie.save
+
+
+new_movie = movie.new
+new_movie["title"] = "The Dark Knight"
+new_movie["year_released"] = "2008"
+new_movie["rated"] = "PG-13"
+new_movie["Studio_ID"] = 
+new_movie.save
+
+
+
+new_movie = movie.new
+new_movie["title"] = "The Dark Knight Rises"
+new_movie["year_released"] = "2012"
+new_movie["rated"] = "PG-13"
+new_movie["Studio_ID"] = 
+new_movie.save
+
+puts new_movie.inspect
+
+new_role = role.new
+new_role["character_name"] = "Bruce Wayne"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Alfred"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Ra's Al Ghul"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Rachel Dawes"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Commissioner Gordon"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Bruce Wayne"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Joker"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Harvey Dent"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Alfred"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Rachel Dawes"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Bruce Wayne"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Commissioner Gordon"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Bane"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "John Blake"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+new_role = role.new
+new_role["character_name"] = "Selina Kyle"
+new_role["movie_ID"] = 
+new_role["actor_ID"] = 
+new_role.save
+
+
 
 # Prints a header for the movies output
 puts "Movies"
